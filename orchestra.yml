@@ -1,0 +1,14 @@
+databases:
+  neo4j:
+    tynewear-roads: 1
+  sql:
+    anpr-server: 1
+  mongo:
+    vehicle-enquiry: 1
+
+webservers:
+  nginx: 1
+  shiny: 1
+
+computing:
+  r-spark: 10

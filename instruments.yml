@@ -1,0 +1,21 @@
+all:
+  setup_image:
+    image: "cloud-xenial64"
+  create_server:
+    image: "cloud-xenial64"
+    external_network: ext-net
+    wait_for_instance: no
+    timeout_before_floating_ip: 15
+  webofmars.dummy:
+
+databases:
+  create_server:
+    flavor: "m1.large"
+
+webservers:
+  create_server:
+    flavor: "m1.large"
+
+computing:
+  create_server:
+    flavor: "AWS.m4.xlarge"
